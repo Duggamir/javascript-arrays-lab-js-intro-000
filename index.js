@@ -18,12 +18,12 @@ function destructivelyRemoveLastKitten()
 
 function destructivelyRemoveFirstKitten()
 {
-  kittens.unshift();
+  kittens.shift();
 }
 
 function appendKitten(name)
 {
-  return [kittens.slice(0), ...name];
+  return [kittens.slice(0), ...[name]];
 }
 
 function prependKitten(name)
